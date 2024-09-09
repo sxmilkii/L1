@@ -17,6 +17,7 @@ import com.example.greetingcard.ui.theme.GreetingCardTheme
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.text.font.FontFamily
 
 
 class MainActivity : ComponentActivity() {
@@ -41,8 +42,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     Surface(color = Color.Red) {
         Text(
             text = "Hi, my name is $name!",
-            modifier = modifier.padding(50.dp)
-
+            modifier = modifier.padding(100.dp),
+            color = Color.DarkGray,
+            fontFamily = FontFamily.Cursive
         )
     }
 }
